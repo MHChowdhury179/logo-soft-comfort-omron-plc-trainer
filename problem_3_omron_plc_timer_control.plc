@@ -1,0 +1,8 @@
+// Problem 3: OMRON PLC Trainer - Motor 1 Start, Timer Delay, Motor 2 Start
+// Inputs: I0.01 = START, I0.02 = STOP
+// Outputs: Q100.02 = MOTOR_1, Q100.03 = MOTOR_2
+// Timer: T000 = 5.0 sec delay using #50 with 100 ms base
+
+Q100.02 := (I0.01 OR Q100.02) AND NOT I0.02;
+TIM_000  := Q100.02, #50;
+Q100.03 := T000;

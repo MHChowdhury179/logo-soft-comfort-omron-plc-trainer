@@ -1,0 +1,6 @@
+// Problem 2: LOGO! Soft Comfort - Two Motor Interlock
+// Inputs: I1 = START_1, I2 = START_2, I3 = STOP
+// Outputs: Q1 = MOTOR_1, Q2 = MOTOR_2
+
+Q1 := (I1 OR Q1) AND NOT I3 AND NOT Q2;
+Q2 := (I2 OR Q2) AND NOT I3 AND NOT Q1;

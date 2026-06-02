@@ -1,0 +1,5 @@
+// Problem 1: LOGO! Soft Comfort - Start/Stop Latch
+// Inputs: I1 = START, I2 = STOP
+// Output: Q1 = MOTOR
+
+Q1 := (I1 OR Q1) AND NOT I2;
