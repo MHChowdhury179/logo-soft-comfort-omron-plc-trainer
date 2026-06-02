@@ -149,3 +149,34 @@ This experiment covers the following PLC ladder logic concepts:
 - PLC Input and Output Mapping
 - Practical PLC Trainer Wiring
 
+- ## Observation
+
+During the experiment, LOGO! Soft Comfort software was used to design and simulate PLC ladder logic for motor control operations. The software interface allowed the input and output conditions to be clearly observed during simulation.
+
+In the first problem, a start-stop motor control circuit was simulated. When the start push button was pressed, the motor output became active. After releasing the start button, the motor continued running because of the latching condition. When the stop push button was pressed, the latch was broken and the motor stopped successfully.
+
+In the second problem, two motor control circuits were simulated using interlocking logic. When Start-1 was pressed, Motor Q1 started and Motor Q2 remained inactive. Similarly, when Start-2 was pressed, Motor Q2 started and Motor Q1 remained inactive. This confirmed that the interlocking logic prevented both motors from running at the same time.
+
+The OMRON PLC Trainer was also used to test the motor control logic practically. The start and stop push buttons were connected with the PLC input terminals, and the motor output was controlled through the PLC output terminal. The ladder logic worked properly in the hardware setup. A timer function was used to start the second motor after a limited time delay.
+
+Overall, both the software simulation and hardware implementation showed correct operation according to the given problem conditions.
+
+## Discussion
+
+This experiment provided practical knowledge about PLC-based motor control using ladder logic. LOGO! Soft Comfort software was helpful for understanding how input contacts, output coils, latching circuits, interlocking circuits, and timer functions work in a PLC system.
+
+The first problem demonstrated the basic concept of a latching circuit. In industrial motor control, a motor should continue running after the start button is released. This was achieved by using a holding contact parallel to the start push button. The stop button was used to disconnect the circuit and stop the motor safely.
+
+The second problem demonstrated the importance of interlocking in motor control. Interlocking is necessary when two motors or two outputs should not operate at the same time. By using the normally closed contact of one motor in the circuit of the other motor, simultaneous operation was prevented. This type of logic is very useful in industrial automation systems where safety and proper sequence control are required.
+
+The OMRON PLC Trainer helped to verify the practical application of the simulated logic. The connection between software logic and physical hardware was observed clearly. The use of a timer also showed how PLCs can control operations based on time delay. This is important for sequential motor starting and other automation processes.
+
+The experiment successfully connected theoretical PLC logic with real hardware operation. It improved understanding of PLC programming, simulation, wiring, and troubleshooting.
+
+## Conclusion
+
+In this experiment, PLC ladder logic was designed, simulated, and tested using LOGO! Soft Comfort software and an OMRON PLC Trainer. The start-stop motor control circuit operated successfully using latch logic. The two-motor control circuit also worked properly using interlocking logic, which prevented both motors from running at the same time.
+
+The OMRON PLC Trainer implementation confirmed that the simulated ladder logic could also operate correctly in a practical hardware system. The timer-based control also worked as expected.
+
+Therefore, the experiment was successful. It helped to develop a clear understanding of PLC ladder logic, motor control, latching operation, interlocking system, timer operation, and practical PLC trainer connection.
